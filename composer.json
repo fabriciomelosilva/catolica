@@ -1,0 +1,58 @@
+{
+  "name": "webgeq-components/skeleton-wordpress",
+  "type": "project",
+  "description": "WordPress Skeleton é o projeto base para site que utilizam o CMS Wordpress como gerenciador de conteúdo.",
+  "homepage": "http://gitlab.geq.com.br/webgeq-components/skeleton-wordpress",
+  "time":"2015-09-08",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anderson Andrade",
+      "email": "anderson.andrade@geq.com.br",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wordpress", "skeleton", "composer"
+  ],
+  "support": {
+    "source":"http://gitlab.geq.com.br/webgeq-components/skeleton-wordpress",
+    "issues": "http://gitlab.geq.com.br/webgeq-components/skeleton-wordpress/issues"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "secure-http":false
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "http://composer.geq.com.br"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.9.2",
+    "oscarotero/env": "^1.0",
+    "roots/wp-password-bcrypt": "1.0.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "public/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "public/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "public/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "public/wordpress"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "php -r \"copy('.env.example', '.env');\"",
+      "php -r \"copy('.htaccess.txt', 'public/.htaccess');\""
+    ]
+  }
+}

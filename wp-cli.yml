@@ -1,0 +1,9 @@
+path: public/wordpress
+color: true
+disabled_commands:
+  - db drop
+  - plugin install
+core config:
+	extra-php: |
+		define( 'WP_DEBUG', true );
+		define( 'WP_POST_REVISIONS', 50 );
