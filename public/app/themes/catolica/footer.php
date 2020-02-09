@@ -99,10 +99,11 @@
 <a href="#"><img src="assets/img/chat.png" alt="Chat"></a>
 </div>
 
-<?php echo '<script type="text/javascript" src="' .get_stylesheet_directory_uri()  . '/assets/js/jquery.js">' ?>
-<?php echo '<script type="text/javascript" src="' .get_stylesheet_directory_uri()  . '/assets/js/slick.min.js">' ?>
-<?php echo '<script type="text/javascript" src="' .get_stylesheet_directory_uri()  . '/assets/js/modal.js">' ?>
-<?php echo '<script type="text/javascript" src="' .get_stylesheet_directory_uri()  . '/assets/js/funcoes.js">' ?>
+<script type="text/javascript" src="http://localhost/catolica/public/app/themes/catolica/assets/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost/catolica/public/app/themes/catolica/assets/js/slick.min.js"></script>
+<script type="text/javascript" src="http://localhost/catolica/public/app/themes/catolica/assets/js/modal.js"></script>
+<script type="text/javascript" src="http://localhost/catolica/public/app/themes/catolica/assets/js/funcoes.js"></script>
+
 
 </body>
 
