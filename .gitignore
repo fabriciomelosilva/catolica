@@ -10,6 +10,8 @@ public/app/uploads/*
 !public/app/mu-plugins/register-theme-directory.php
 !public/app/mu-plugins/bedrock-autoloader.php
 public/app/themes/twentyeleven
+!public/app/plugins/advanced-custom-fields-pro
+
 # WordPress
 public/wordpress
 public/.htaccess
