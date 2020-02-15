@@ -2,7 +2,7 @@
 
 <section>
 
-    <article class="col-25">
+   <article class="col-25">
 
         <ul>
             <li>Acadêmico</li>

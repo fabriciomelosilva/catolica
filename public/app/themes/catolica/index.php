@@ -13,4 +13,9 @@ get_header();
 			<?php endwhile; ?>
 		</div>
 
-<?php get_footer(); ?>
+<?php 
+		get_template_part('sections/nav', 'news'); 
+
+
+
+get_footer(); ?>

@@ -159,3 +159,25 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function create_posttype_news() {
+ 
+    register_post_type( 'noticias',
+        array(
+            'labels' => array(
+                'name' => __( 'Noticias' ),
+                'singular_name' => __( 'Noticia' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+			'rewrite' => array('slug' => 'noticias'),
+			'supports' => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'custom-fields',
+			),
+        )
+    );
+}
+add_action( 'init', 'create_posttype_news' );
+
