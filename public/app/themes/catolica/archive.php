@@ -13,8 +13,14 @@ $post_type = get_post_type();
 
 if ($post_type == 'noticias'){
 	
-	$posts = new WP_Query( array( 'post_type' => 'noticias', 'posts_per_page' => 1 ) ); 
-	var_dump($posts);
+	$posts = new WP_Query( array( 'post_type' => 'noticias', 'posts_per_page' => 5 ) ); 
+	while ( $posts->have_posts() ) : $posts->the_post();
+
+	the_title( '<h2>', '</h2>' ); 
+
+	endwhile;
+
+
 
 }
 

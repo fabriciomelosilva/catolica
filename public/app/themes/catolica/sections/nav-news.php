@@ -1,5 +1,5 @@
 
-<?php $loop = new WP_Query( array( 'post_type' => 'noticias', 'posts_per_page' => 2 ) ); ?>
+<?php $loop = new WP_Query( array( 'post_type' => 'noticias', 'orderby' => 'post_date','posts_per_page' => 2, 'suppress_filters' => true) ); ?>
 
 <section>
 
