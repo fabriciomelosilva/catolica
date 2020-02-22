@@ -15,6 +15,7 @@ get_header();
 
 <?php 
 		get_template_part('sections/nav', 'news'); 
+		get_template_part('sections/nav', 'events'); 
 
 
 

@@ -204,6 +204,28 @@ function create_posttype_about() {
 }
 add_action( 'init', 'create_posttype_about' );
 
+function create_posttype_events() {
+ 
+    register_post_type( 'eventos',
+        array(
+            'labels' => array(
+                'name' => __( 'Eventos' ),
+                'singular_name' => __( 'Evento' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+			'rewrite' => array('slug' => 'eventos'),
+			'supports' => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'custom-fields',
+			),
+        )
+    );
+}
+add_action( 'init', 'create_posttype_events' );
+
 
 
 
