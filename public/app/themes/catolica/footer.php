@@ -95,10 +95,6 @@
 
 <?php wp_footer(); ?>
 
-<div class="chat">
-<a href="#"><img src="assets/img/chat.png" alt="Chat"></a>
-</div>
-
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/jquery.js' ?>"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/slick.min.js' ?>"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/modal.js' ?>"></script>

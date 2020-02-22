@@ -15,8 +15,7 @@
 
             <figure><img src="<?php echo $image ?>" /></figure>
             <?php echo '<a href="' . get_permalink() . '" title="' . the_title_attribute( 'echo=0' ) . '" rel="">'; ?>
-                <?php the_title( '<h2>', '</h2>' ); 
-                echo substr($content, 0, 219);?>
+                <?php the_title( '<h2>', '</h2>' ); ?>
                 <small>15 NOV 2019</small>
                 <small>Leia mais</small>
             </a>
