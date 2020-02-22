@@ -182,28 +182,6 @@ function create_posttype_news() {
 add_action( 'init', 'create_posttype_news' );
 
 
-function create_posttype_about() {
- 
-    register_post_type( 'sobre',
-        array(
-            'labels' => array(
-                'name' => __( 'Sobre' ),
-                'singular_name' => __( 'Sobre' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-			'rewrite' => array('slug' => 'sobre'),
-			'supports' => array(
-				'title',
-				'editor',
-				'thumbnail',
-				'custom-fields',
-			),
-        )
-    );
-}
-add_action( 'init', 'create_posttype_about' );
-
 function create_posttype_events() {
  
     register_post_type( 'eventos',
