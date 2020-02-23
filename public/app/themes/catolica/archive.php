@@ -1,14 +1,10 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
+<?php get_template_part('sections/nav', 'index'); ?>
 
-        
-get_template_part('sections/nav', 'index');
+<?php $post_type = get_post_type(); ?>
 
-
-$post_type = get_post_type();
-
-if ($post_type == 'noticias') : ?>
+<?php if ($post_type == 'noticias') : ?>
 	<main>
     <section>
 		<h5 class="col-100 center">Notícias</h5>
@@ -100,7 +96,6 @@ if ($post_type == 'noticias') : ?>
 		<?php endwhile; ?>
 
 	</section>
-
 	</main>
 
 <?php endif; ?>

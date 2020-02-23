@@ -3,11 +3,35 @@
 <section>
 
    <article class="col-25">
-
+   
         <ul>
             <li>Acadêmico</li>
-            <li><a href="#" target="_blank">Avaliação institucional</a></li>
-            <li><a href="#" target="_blank">Solicitar certificado de eventos</a></li>
+
+            <?php
+                $url_avaliacao_institucional = null;
+                $arquivo_avaliacao_institucional = null;
+
+                if ($GLOBALS["academico_fields"]["url_avaliacao_institucional"]) :
+                    $url_avaliacao_institucional = $GLOBALS["academico_fields"]["url_avaliacao_institucional"];
+                else:
+                    $arquivo_avaliacao_institucional = $GLOBALS["academico_fields"]["arquivo_avaliacao_institucional"];
+                endif;
+            ?>
+
+            <li><a href="<?php echo ($url_avaliacao_institucional) ? $url_avaliacao_institucional : $arquivo_avaliacao_institucional; ?>" target="_blank">Avaliação institucional</a></li>
+            
+            <?php
+                $url_solicitar_certificado_de_eventos = null;
+                $arquivo_solicitar_certificado_de_eventos = null;
+
+                if ($GLOBALS["academico_fields"]["url_solicitar_certificado_de_eventos"]) :
+                    $url_solicitar_certificado_de_eventos = $GLOBALS["academico_fields"]["url_solicitar_certificado_de_eventos"];
+                else:
+                    $arquivo_solicitar_certificado_de_eventos = $GLOBALS["academico_fields"]["arquivo_solicitar_certificado_de_eventos"];
+                endif;
+            ?>
+
+            <li><a href="<?php echo ($url_solicitar_certificado_de_eventos) ? $url_solicitar_certificado_de_eventos : $arquivo_solicitar_certificado_de_eventos; ?>" target="_blank">Solicitar certificado de eventos</a></li>
             <li><a href="#" target="_blank">Calendário acadêmico</a></li>
         </ul>
 
@@ -17,7 +41,20 @@
 
         <ul>
             <li>Documentos</li>
-            <li><a href="#" target="_blank">Bolsas e financiamentos</a></li>
+
+            <?php
+
+                $url_bolsas_e_financiamentos = null;
+                $aquivo_bolsas_e_financiamentos = null;
+
+                if ($GLOBALS["documentos_fields"]["url_bolsas_e_financiamentos"]) :
+                    $url_bolsas_e_financiamentos = $GLOBALS["documentos_fields"]["url_bolsas_e_financiamentos"];
+                else:
+                    $aquivo_bolsas_e_financiamentos = $GLOBALS["documentos_fields"]["aquivo_bolsas_e_financiamentos"];
+                endif;
+            ?>
+
+            <li><a href="<?php echo ($url_bolsas_e_financiamentos) ? $url_bolsas_e_financiamentos : $aquivo_bolsas_e_financiamentos; ?>" target="_blank">Bolsas e financiamentos</a></li>
             <li><a href="#" target="_blank">Manual institucional</a></li>
             <li><a href="#" target="_blank">Regulamentos institucionais</a></li>
         </ul>

@@ -1,5 +1,7 @@
 <?php // Template Name: Faculdade Católica ?>
 
+<?php get_template_part('sections/nav', 'getfields'); ?>
+
 <?php get_header(); ?>
 <?php get_template_part('sections/nav', 'index'); ?>
 
@@ -17,3 +19,4 @@
 ?>
 
 <?php get_footer(); ?>
+
