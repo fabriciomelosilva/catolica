@@ -57,10 +57,7 @@
                             $postID = $subcat_post->ID;
                         endforeach;
                     ?>
-
                         <p><a href="<?php echo get_permalink($postID); ?>"><?php echo get_the_title($postID);?> </a></p>
-
-        
                     </div>
                 </div>
 

@@ -93,7 +93,8 @@
 
     <article class="col-25">
 
-        <img src="assets/img/logo-2.png" alt="Logotipo antigo">
+        <img src="<?php echo get_template_directory_uri() .'/assets/img/logo-2.png'; ?>" alt="Logotipo antigo">
+
 
     </article>
 
@@ -110,7 +111,7 @@
         <ul>
             <li>Contato
                 <ul class="social">
-                    <li><a href="#"><img src="assets/img/icone-wpp.png" alt=""></a> <a href="#"><img src="assets/img/icone-face.png" alt=""></a></li>
+                    <li><a href="#"><img src="<?php echo get_template_directory_uri() .'/assets/img/icone-wpp.png'; ?>" alt=""></a> <a href="#"><img src="<?php echo get_template_directory_uri() .'/assets/img/icone-face.png'; ?>" alt=""></a></li>
                 </ul>
             </li>
             <li><a href="modal/trabalhe.php" rel="modal:open">Trabalhe conosco</a></li>
