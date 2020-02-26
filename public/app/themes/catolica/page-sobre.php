@@ -2,6 +2,8 @@
 
 <?php
 
+get_template_part('sections/nav', 'getfields');
+
 get_header();
 
         

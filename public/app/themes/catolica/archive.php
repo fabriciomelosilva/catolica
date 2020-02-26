@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 
 <?php get_template_part('sections/nav', 'index'); ?>
@@ -5,6 +6,9 @@
 <?php $post_type = get_post_type(); ?>
 
 <?php if ($post_type == 'noticias') : ?>
+
+<?php get_template_part('sections/nav', 'getfields'); ?>
+
 	<main>
     <section>
 		<h5 class="col-100 center">Notícias</h5>
